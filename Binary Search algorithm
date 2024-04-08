@@ -12,6 +12,7 @@ int main() {
 /******    Binary Search Algorithm   ***********/
 
 // time complexity =>>> O(log2 n )
+
 /*const int n = 10, i=4;
 int arr[n]={1,2,3,4,5,6,7,8,9,10};
 int start = 0,end = n-1, mid ;
