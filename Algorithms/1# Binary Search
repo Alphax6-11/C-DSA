@@ -1,0 +1,88 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+
+// built function to check who is greater between two numbers ??
+bool is_greater(int a,int b){
+return a>b;
+}
+
+using namespace std;
+int main() {
+ 
+/******    Binary Search Algorithm   ***********/
+
+// time complexity =>>> O(log2 n )
+
+/*
+const int n = 10, i=4;
+int arr[n]={1,2,3,4,5,6,7,8,9,10};
+int start = 0,end = n-1, mid ;
+bool check = 0;
+while(start<=end){
+    mid = (start+end)/2;
+    if(arr[mid]== i)
+    {
+        check = 1;
+        break;
+    }
+    else if (arr[mid]>i){
+       end = mid-1;
+    } else
+         start = mid+1;
+}
+cout << (check? "Found":"Not Found")<<endl;
+*/
+
+// use binary search to find first occurrence in array
+/*
+int n , target;
+cin >> n >>target;
+int arr[1000];
+
+for(int i =0;i<n;i++){
+    cin >> arr[i];
+}
+// sort Function sort(array name,range,key(always function))
+sort(arr,arr+n);
+int start = 0,end=n-1, mid;
+int res = -1;
+while(start<=end){
+      mid = (start+end)/2;
+    if(arr[mid]==target){
+        res = mid;
+        end = mid-1;
+    }else if(arr[mid]>target){
+    end = mid-1;
+    }else // arr[mid]<target
+        start = mid+1;
+}
+
+cout << res ; 
+*/
+
+// exercise on sort
+/*
+int n ;
+cin >> n;
+char arr[n];
+for(int i =0;i<n;i++){
+    cin >>arr[i];
+}sort(arr,arr+n);
+cout <<arr;
+*/
+// exercise on decending order
+/*int n ;
+cin >> n;
+int arr[n];
+for(int i =0;i<n;i++)
+{
+    cin >> arr[i];
+}
+sort(arr,arr+n,is_greater);
+for(int i =0;i<n;i++){
+    cout <<arr[i]<<" ";
+}
+*/
+return 0; 
+}
+
