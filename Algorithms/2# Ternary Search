@@ -1,0 +1,56 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+
+using namespace std;
+
+
+#define Line "\n"
+
+int main() {
+/*************    Ternary Search      **************/
+
+/* Time complexity =>>>> O(log3 n )  */
+
+// 1# use it to find the peak value in array
+
+/*
+int arr[]={1,2,3,4,5,4,3,2,1};
+int size_ofArray = sizeof(arr)/sizeof(arr[0]);
+int low = 0,high = size_ofArray-1;
+int mid1,mid2;
+while(low<=high){
+    mid1 = low+(high-low)/3;
+    mid2 = high -(high-low)/3;
+    if(arr[mid1]>arr[mid2]){
+        high = mid2-1;
+    }else
+       low = mid1+1;
+}
+cout << mid1 << " "<<arr[mid1]<<Line;
+
+*/
+
+// 2# use if find the minimum value in array
+
+/*
+int arr[]={1,2,3,4,5,4,3,2,1};
+int size_ofArray = sizeof(arr)/sizeof(arr[0]);
+int low = 0,high = size_ofArray-1;
+int mid1,mid2;
+while(low<=high){
+    mid1 = low+(high-low)/3;
+    mid2 = high -(high-low)/3;
+    if(arr[mid1]>arr[mid2]){
+        // do this
+        low = mid+1;
+    }else
+       high = mid2-1;
+
+}
+cout << mid1 << " "<<arr[mid1]<<Line;
+
+*/
+
+return 0;
+}
+
