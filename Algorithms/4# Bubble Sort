@@ -1,0 +1,50 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+
+using namespace std;
+
+#define Line "\n"
+
+void BubbleSort (int arr[],int n) // n ->> size of array
+{ /*
+    * outer loop to determine count of pass = size - 1
+    * inner loop to do swap
+    */
+ 
+    bool flag = true;       //  0  1  2   3  4  5
+    for(int i =0;i<n-1;i++) // 100 60 20 50  30 90  n =6
+    {
+
+    for(int j=0;j<n-i-1;j++) // n-i-1 to make condition dynamic to donot check last element in every itiration
+        {
+            if(arr[j]>arr[j+1])
+             {
+                 swap(arr[j],arr[j+1]); // swap function should include in your file #include <algorithm>
+                 falg = false;
+            }
+
+        } if(flag) break;
+    }
+
+}
+void print(int arr[],int n){
+  for(int i =0;i<n;i++){
+    cout << arr[i]<<" ";
+  }
+}
+
+
+int main() {
+/******* Bubble Sort Algorithm  **********/
+/*
+* Time Complexity  ->>>> O(n2) in worst case and average case
+* Space Complexity ->>>> O(1)
+*/
+// ->> Test Algorithm
+int arr[]={1,6,5,7,3,4,8,10,9};
+int size = sizeof(arr)/sizeof(arr[0]);
+BubbleSort(arr,size);
+print(arr,size);
+
+return 0;
+}
