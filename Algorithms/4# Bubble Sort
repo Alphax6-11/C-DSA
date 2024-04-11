@@ -20,7 +20,7 @@ void BubbleSort (int arr[],int n) // n ->> size of array
             if(arr[j]>arr[j+1])
              {
                  swap(arr[j],arr[j+1]); // swap function should include in your file #include <algorithm>
-                 falg = false;
+                 flag = false;
             }
 
         } if(flag) break;
